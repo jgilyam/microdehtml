@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-size: 12px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #666;
+}
+header {
+  background-color: #eac926;
+}
+.input {
+  background-color: #ebebeb;
+}
+
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+header .form .submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+header .compra {
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav .menu-burger {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background-color: #1259c3;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 160px 15px 200px;
+}
+.detalle-producto {
+  background-color: white;
+  margin: 10px 20px;
+}
+.detalle-producto h4 {
+  font-size: 16px;
+  color: #666;
+  padding-left: 10px;
+}
+.detalle-producto p {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.detalle-producto .precio {
+  font-size: 18px;
+  padding-left: 10px;
+}
+.truck {
+  font-size: 16px;
+  color: #39b54a;
+  padding-left: 10px;
+}
+.descuento {
+  color: #39b54a;
+}
