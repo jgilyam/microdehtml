@@ -80,3 +80,16 @@ header nav .menu-burger {
 .descuento {
   color: #39b54a;
 }
+header div .banner {
+  margin: 30px 30px 30px 30px;
+}
+
+footer .bloque-fin {
+  text-align: center;
+
+  background-color: white;
+}
+footer .bloque-fin div {
+  color: #1259c3;
+  font-size: 30px;
+}
