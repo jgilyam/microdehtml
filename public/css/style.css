@@ -30,6 +30,10 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.main-header-top-bar h2 {
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
 .main-header-botoom-bar {
   display: none;
 }
@@ -43,7 +47,13 @@ h3 {
   color: #666;
   font-size: 16px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px 10px;
+  text-align: right;
+  max-width: 150px;
+  max-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .main-header-info {
   font-size: 14px;
@@ -98,7 +108,43 @@ h3 {
   }
   .main-header-botoom-bar li {
     margin: 0px 5px;
+  }
+  .main-header-form div {
+    max-width: 260px;
+  }
 }
+@media (min-width: 1200px) {
+  .logo {
+    width: 250px;
+  }
+  .main-header-form div {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .main-header-top-bar,
+  .main-header-botoom-bar {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .main-header-botoom-bar {
+    margin-top: 15px;
+  }
+  .main-header-botoom-bar li {
+    margin: 0px 18px;
+  }
+  .main-header-botoom-bar a {
+    font-size: 18px;
+  }
+  .main-header-info {
+    max-width: none;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .main-header-form div {
+    max-width: 300px;
+  }
+}
+
 /*  FIn del header*/
 .detalle-producto {
   background-color: white;
