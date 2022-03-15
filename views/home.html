@@ -21,35 +21,47 @@
     />
 
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Kit fontawesomw -->
+    <script
+      src="https://kit.fontawesome.com/e9aab52371.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Header -->
   </head>
   <body>
-    <header>
-      <div>
+    <header class="main-header">
+      <!-- logo -->
+      <div class="main-header-top-bar">
         <img
           src="/img/logo-mercado-liebre.svg"
           alt="Logo de Mercado Liebre"
-          width="360"
+          class="logo"
         />
-        <div class="form" action="#" method="GET">
-          <div class="input">Buscar productos, marcas y más</div>
-          <div class="submit"><i class="fa fa-search"></i></div>
+        <!-- barra de busqueda -->
+        <div class="main-header-form" action="#" method="GET">
+          <div class="main-header-form-input">Buscar productos</div>
+          <div class="main-header-form-submit">
+            <i class="fa fa-search"></i>
+          </div>
         </div>
-        <div class="compra">
-          <p>
-            <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin
-            tarjeta de crédito
-          </p>
-        </div>
+        <!-- texto -->
+        <h2 class="main-header-info">
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </h2>
       </div>
 
-      <nav>
-        <ul>
+      <nav class="main-header-botoom-bar">
+        <ul class="main-nav">
           <li><a href="#">Ofertas </a></li>
           <li><a href="#">Tiendas Oficiales </a></li>
           <li><a href="#">Vender </a></li>
           <li><a href="#">Ayuda </a></li>
         </ul>
-        <ul>
+
+        <ul class="sec-nav">
           <li>
             <a href="#">Creá tu cuenta <i class="far fa-id-card"></i></a>
           </li>
@@ -60,14 +72,16 @@
             <a href="#">Mis compras <i class="fas fa-shopping-basket"></i> </a>
           </li>
         </ul>
-        <div class="menu-burger"><i class="fa fa-bars burger"></i></div>
       </nav>
+      <!-- Menu burger desplegable -->
+      <div class="menu-burger"><i class="fa fa-bars burger"></i></div>
+    </header>
+    <!-- Fin del Header -->
+
+    <main>
       <div class="banner">
         <img src="/img/img-home-banner.jpg" alt="banner" width="360" />
       </div>
-    </header>
-
-    <main>
       <section>
         <h3>Basado en tu última visita</h3>
         <!-- Producto -->
