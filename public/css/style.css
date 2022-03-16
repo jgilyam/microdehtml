@@ -67,7 +67,6 @@ h3 {
   color: black;
   margin: 0px;
   padding: 0px;
-  border: red 1px dotted;
 }
 .main-header-botoom-bar a {
   text-decoration: none;
@@ -86,9 +85,89 @@ h3 {
 
   margin: auto;
 }
-@media (min-width: 768px) {
+
+/*  FIn del header*/
+
+.main {
+  width: 90vw;
+  margin: auto;
+}
+.lista-de-art {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.detalle-producto {
+  background-color: white;
+  margin: 10px;
+  max-width: 300px;
+}
+.detalle-producto img {
+  width: 100%;
+}
+
+.detalle-de-producto-descripcion {
+  border-top: #ebebeb 1px solid;
+  padding: 15px;
+}
+.detalle-producto h4 {
+  font-size: 16px;
+  color: #666;
+  padding-left: 10px;
+  display: none;
+}
+.detalle-producto p {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.detalle-producto .precio {
+  font-size: 18px;
+  padding-left: 10px;
+}
+main section article i {
+  color: #39b54a;
+
+  display: block;
+  font-size: 16px;
+  padding: 5 px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+.precio-descuento {
+  display: flex;
+}
+.descuento {
+  width: 70%;
+  color: #39b54a;
+  border: red 1px dotted;
+}
+.precio {
+  width: 30%;
+  border: red 1px dotted;
+}
+header div .banner {
+  margin: 30px 30px 30px 30px;
+}
+
+footer .bloque-fin {
+  text-align: center;
+
+  background-color: white;
+}
+footer .bloque-fin div {
+  color: #1259c3;
+  font-size: 30px;
+}
+
+@media (min-width: 769px) {
   .main-header-top-bar {
-    border: red 1px dotted;
+    border: blue 1px dotted;
   }
   .main-header-info {
     max-width: 200px;
@@ -111,6 +190,14 @@ h3 {
   }
   .main-header-form div {
     max-width: 260px;
+  }
+
+  /*main*/
+  .detalle-producto h4 {
+    display: block;
+  }
+  .detalle-producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 }
 @media (min-width: 1200px) {
@@ -143,44 +230,4 @@ h3 {
   .main-header-form div {
     max-width: 300px;
   }
-}
-
-/*  FIn del header*/
-.detalle-producto {
-  background-color: white;
-  margin: 10px 20px;
-}
-.detalle-producto h4 {
-  font-size: 16px;
-  color: #666;
-  padding-left: 10px;
-}
-.detalle-producto p {
-  font-size: 16px;
-  padding-left: 10px;
-}
-.detalle-producto .precio {
-  font-size: 18px;
-  padding-left: 10px;
-}
-.truck {
-  font-size: 16px;
-  color: #39b54a;
-  padding-left: 10px;
-}
-.descuento {
-  color: #39b54a;
-}
-header div .banner {
-  margin: 30px 30px 30px 30px;
-}
-
-footer .bloque-fin {
-  text-align: center;
-
-  background-color: white;
-}
-footer .bloque-fin div {
-  color: #1259c3;
-  font-size: 30px;
 }
