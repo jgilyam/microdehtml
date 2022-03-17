@@ -165,6 +165,13 @@ footer .bloque-fin div {
   font-size: 30px;
 }
 
+.crete-form {
+  padding: 20px 15px;
+}
+
+@media (min-width: 360px) {
+}
+
 @media (min-width: 769px) {
   .main-header-top-bar {
     border: blue 1px dotted;
