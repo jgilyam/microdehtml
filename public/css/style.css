@@ -102,13 +102,17 @@ h3 {
   margin: 10px;
   max-width: 300px;
 }
-.detalle-producto img {
+img {
   width: 100%;
 }
 
 .detalle-de-producto-descripcion {
   border-top: #ebebeb 1px solid;
+
   padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 .detalle-producto h4 {
   font-size: 16px;
@@ -126,10 +130,9 @@ h3 {
 }
 main section article i {
   color: #39b54a;
-
   display: block;
   font-size: 16px;
-  padding: 5 px;
+  padding: 5px;
   width: 30px;
   height: 30px;
   border: 1px solid #39b54a;
@@ -145,14 +148,12 @@ main section article i {
 .descuento {
   width: 70%;
   color: #39b54a;
-  border: red 1px dotted;
 }
 .precio {
   width: 30%;
-  border: red 1px dotted;
 }
-header div .banner {
-  margin: 30px 30px 30px 30px;
+.banner {
+  width: 100%;
 }
 
 footer .bloque-fin {
@@ -170,12 +171,12 @@ footer .bloque-fin div {
 }
 
 @media (min-width: 360px) {
+  .detalle-producto {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 769px) {
-  .main-header-top-bar {
-    border: blue 1px dotted;
-  }
   .main-header-info {
     max-width: 200px;
     text-align: right;
@@ -205,6 +206,7 @@ footer .bloque-fin div {
   }
   .detalle-producto {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    max-width: 40%;
   }
 }
 @media (min-width: 1200px) {
@@ -236,5 +238,8 @@ footer .bloque-fin div {
   }
   .main-header-form div {
     max-width: 300px;
+  }
+  .detalle-producto {
+    max-width: 23%;
   }
 }
