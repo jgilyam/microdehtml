@@ -155,19 +155,32 @@ main section article i {
 .banner {
   width: 100%;
 }
+footer {
+  background-color: white;
+  padding: 40px;
+}
 
 footer .bloque-fin {
   text-align: center;
 
-  background-color: white;
+  margin-bottom: 30px;
 }
 footer .bloque-fin div {
   color: #1259c3;
-  font-size: 30px;
+  margin-bottom: 10px;
+}
+.bloque-fin p {
+  padding: 0px 20px;
 }
 
+.bloque-fin div i {
+  font-size: 2em;
+}
 .crete-form {
   padding: 20px 15px;
+}
+.copy {
+  text-align: left;
 }
 
 @media (min-width: 360px) {

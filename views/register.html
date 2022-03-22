@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Registro</title>
+
+    <link href="css/register.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <form action="#" method="POST">
+        <label for="register">Nombre y Apellido</label>
+        <input name="register" type="text" />
+        <label for="usuario">Nombre de usuario</label>
+        <input name="usuario" type="text" />
+        <label for="fNacimiento">Fecha de nacimiento</label>
+        <input name="fNacimiento" type="date" />
+        <label for="domicilio">Domicilio</label>
+        <input name="domicilio" type="text" />
+        <label for="perfil">Perfil</label>
+        <select name="perfil">
+          <option value="vendedor">Vendedor</option>
+          <option value="comprador">Comprador</option>
+        </select>
+        <label for="interes">Intereses:</label>
+        <div>
+          <input type="checkbox" name="interes" value="electro" />
+          <label for="interes">Electro</label>
+        </div>
+        <div>
+          <input type="checkbox" name="interes" value="moda" /><label
+            for="interes"
+            >Moda</label
+          >
+        </div>
+        <div>
+          <input type="checkbox" name="interes" value="electro" /><label
+            for="interes"
+            >Hogar</label
+          >
+        </div>
+        <div>
+          <input type="checkbox" name="interes" value="electro" /><label
+            for="interes"
+            >Juegueteria</label
+          >
+        </div>
+        <div>
+          <input type="checkbox" name="interes" value="electro" /><label
+            for="interes"
+            >Vida sana</label
+          >
+        </div>
+        <label for="fPerfil">Carga tu foto de perfil</label>
+        <input name="fPerfil" type="file" />
+        <label for="pass">Password</label>
+        <input name="pass" type="password" />
+        <label for="confirmPass">Confirmar Password</label>
+        <input name="confirmPass" type="password" />
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
