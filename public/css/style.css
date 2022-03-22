@@ -21,11 +21,10 @@ h3 {
   background-color: #eac926;
   padding: 20px;
 }
-.main-header-form-input {
-}
 
 .main-header-form-input input {
   border: none;
+  width: 100%;
 }
 .main-header-form-submit {
   width: 30px;
@@ -66,7 +65,7 @@ h3 {
   font-size: 16px;
   padding: 5px 10px;
   text-align: right;
-  max-width: 150px;
+  width: 80%;
   max-height: 30px;
   overflow: hidden;
   white-space: nowrap;
@@ -139,11 +138,9 @@ img {
 }
 .detalle-producto p {
   font-size: 16px;
-  padding-left: 10px;
 }
 .detalle-producto .precio {
   font-size: 18px;
-  padding-left: 10px;
 }
 main section article i {
   color: #39b54a;
@@ -165,6 +162,7 @@ main section article i {
 .descuento {
   width: 70%;
   color: #39b54a;
+  padding: 1px 25px;
 }
 .precio {
   width: 30%;
@@ -229,7 +227,7 @@ footer .bloque-fin div {
   .main-header-botoom-bar li {
     margin: 0px 5px;
   }
-  .main-header-form div {
+  .main-header-form {
     width: 30%;
   }
 
