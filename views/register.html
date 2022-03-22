@@ -10,58 +10,106 @@
     <link href="css/register.css" rel="stylesheet" />
   </head>
   <body>
-    <header></header>
     <main>
+      <h1>Registro</h1>
       <form action="#" method="POST">
         <label for="register">Nombre y Apellido</label>
-        <input name="register" type="text" />
+        <input
+          name="register"
+          id="register"
+          type="text"
+          pattern="[a-z]{4,8}"
+          title="de 4 a 8 caracteres"
+        />
         <label for="usuario">Nombre de usuario</label>
-        <input name="usuario" type="text" />
+        <input
+          name="usuario"
+          id="usuario"
+          type="text"
+          pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+          title="Debe ingresar un email valido"
+        />
         <label for="fNacimiento">Fecha de nacimiento</label>
-        <input name="fNacimiento" type="date" />
+        <input
+          name="fNacimiento"
+          type="date"
+          class="form-date"
+          id="fNacimiento"
+        />
         <label for="domicilio">Domicilio</label>
-        <input name="domicilio" type="text" />
+        <input name="domicilio" type="text" id="domicilio" />
         <label for="perfil">Perfil</label>
-        <select name="perfil">
-          <option value="vendedor">Vendedor</option>
-          <option value="comprador">Comprador</option>
-        </select>
+        <div class="form-radio">
+          <div>
+            <label for="comprador">Comprador</label>
+            <input
+              type="radio"
+              name="perfil"
+              value="comprador"
+              id="comprador"
+              checked
+            />
+          </div>
+          <div>
+            <label for="vendedor">Vendedor</label>
+            <input type="radio" name="perfil" value="vendedor" id="vendedor" />
+          </div>
+        </div>
+
         <label for="interes">Intereses:</label>
-        <div>
-          <input type="checkbox" name="interes" value="electro" />
-          <label for="interes">Electro</label>
+        <div class="form-check-container">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="electro"
+              value="electro"
+              id="electro"
+            />
+            <label for="electro">Electro</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="moda" value="moda" id="moda" /><label
+              for="moda"
+              >Moda</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="interes"
+              value="hogar"
+              id="hogar"
+            /><label for="hogar">Hogar</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="jugueteria"
+              value="jugueteria"
+              id="jugueteria"
+            /><label for="jugueteria">Juegueteria</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="sana" value="sana" id="sana" /><label
+              for="sana"
+              >Vida sana</label
+            >
+          </div>
         </div>
-        <div>
-          <input type="checkbox" name="interes" value="moda" /><label
-            for="interes"
-            >Moda</label
-          >
-        </div>
-        <div>
-          <input type="checkbox" name="interes" value="electro" /><label
-            for="interes"
-            >Hogar</label
-          >
-        </div>
-        <div>
-          <input type="checkbox" name="interes" value="electro" /><label
-            for="interes"
-            >Juegueteria</label
-          >
-        </div>
-        <div>
-          <input type="checkbox" name="interes" value="electro" /><label
-            for="interes"
-            >Vida sana</label
-          >
-        </div>
+
         <label for="fPerfil">Carga tu foto de perfil</label>
-        <input name="fPerfil" type="file" />
+        <input name="fPerfil" type="file" id="fPerfil" />
         <label for="pass">Password</label>
-        <input name="pass" type="password" />
+        <input
+          name="pass"
+          type="password"
+          pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"
+          title="Contrañsea no cumple requisitos"
+          id="pass"
+        />
         <label for="confirmPass">Confirmar Password</label>
-        <input name="confirmPass" type="password" />
-        <button type="submit">Enviar</button>
+        <input name="confirmPass" type="password" id="confirmPass" />
+        <button type="submit"><a href="/">Enviar</a></button>
         <button type="reset">Reset</button>
       </form>
     </main>
