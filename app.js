@@ -4,12 +4,13 @@ const res = require("express/lib/response");
 const path = require("path");
 
 const app = express();
-const PORT = 3000;
+
+const port = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
-app.listen(PORT, () => {
-  console.log(`Server corriendo en pueto ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server corriendo en pueto ${port}`);
 });
 
 app.get("/", (req, res) => {
