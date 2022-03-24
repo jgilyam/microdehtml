@@ -118,6 +118,13 @@ h3 {
   margin: 10px;
   max-width: 300px;
 }
+.detalle-producto:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.detalle-producto:hover .detalle-de-producto-descripcion h4 {
+  color: #666;
+}
+
 img {
   width: 100%;
 }
@@ -130,11 +137,15 @@ img {
   flex-wrap: wrap;
   position: relative;
 }
+
 .detalle-producto h4 {
   font-size: 16px;
   color: #666;
   padding-left: 10px;
-  display: none;
+  color: white;
+}
+.detalle-producto h4:hover {
+  color: #666;
 }
 .detalle-producto p {
   font-size: 16px;
@@ -155,6 +166,10 @@ main section article i {
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: all 200ms;
+}
+.detalle-producto:hover i {
+  transform: rotate(-90deg);
 }
 .precio-descuento {
   display: flex;
@@ -196,6 +211,9 @@ footer .bloque-fin div {
 .copy {
   text-align: left;
 }
+.bloque-fin i:hover {
+  color: #39b54a;
+}
 
 @media (min-width: 360px) {
   .detalle-producto {
@@ -232,10 +250,8 @@ footer .bloque-fin div {
 
   /*main*/
   .detalle-producto h4 {
-    display: block;
   }
   .detalle-producto {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     max-width: 40%;
   }
 }
@@ -271,5 +287,10 @@ footer .bloque-fin div {
   }
   .detalle-producto {
     max-width: 23%;
+  }
+  .footer-prod {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
 }
